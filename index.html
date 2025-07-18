@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IIT Kharagpur CSE Performance - Anumolu Vinayak Khanna</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      margin: 0;
+    }
+    .sidebar {
+      width: 250px;
+      background: #f0f0f0;
+      padding: 10px;
+      height: 100vh;
+      overflow-y: auto;
+    }
+    .sidebar h2 {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .sidebar a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+      border-bottom: 1px solid #ccc;
+    }
+    .sidebar a:hover, .sidebar a.active {
+      background: #007bff;
+      color: white;
+    }
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+    .semester {
+      display: none;
+    }
+    .semester.active {
+      display: block;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .performance-summary {
+      background-color: #e5f9e7;
+      padding: 10px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+  </style>
+<script>
+    function showSemester(sem) {
+      document.querySelectorAll('.semester').forEach(s => s.classList.remove('active'));
+      document.getElementById('sem' + sem).classList.add('active');
+      document.querySelectorAll('.sidebar a').forEach(link => link.classList.remove('active'));
+      document.getElementById('link' + sem).classList.add('active');
+    }
+    window.onload = () => showSemester(1);
+  </script>
+</head>
+<body>
+<div class="sidebar">
+<h2>Curr. and Perf. Semno</h2>
+<a href="#" id="link1" onclick="showSemester(1)">Semester 1</a>
+<a href="#" id="link2" onclick="showSemester(2)">Semester 2</a>
+<a href="#" id="link3" onclick="showSemester(3)">Semester 3</a>
+<a href="#" id="link4" onclick="showSemester(4)">Semester 4</a>
+<a href="#" id="link5" onclick="showSemester(5)">Semester 5</a>
+<a href="#" id="link6" onclick="showSemester(6)">Semester 6</a>
+<a href="#" id="link7" onclick="showSemester(7)">Semester 7</a>
+<a href="#" id="link8" onclick="showSemester(8)">Semester 8</a>
+</div>
+<div class="content">
+<h1>Student Performance of 21CS10007 (Anumolu Vinayak Khanna)</h1>
+<div class="semester active" id="sem1">
+<h2>Semester 1</h2>
+<table>
+<thead>
+<tr>
+<th>Subno</th><th>Subject Name</th><th>Sub. Type</th><th>L-T-P</th><th>Credit</th><th>Reg. Sem.</th><th>Registered Session</th><th>Grade</th><th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>BS10003</td><td>SCIENCE OF LIVING SYSTEMS</td><td>Depth CORE</td><td>2-0-0</td><td>2</td><td>1</td><td>AU-21-22 (P)</td><td>C</td><td>✔</td></tr>
+<tr><td>CE13003</td><td>ENGINEERING DRAWING AND COMPUTER GRAPHICS</td><td>Depth CORE</td><td>1-0-3</td><td>3</td><td>1</td><td>AU-21-22 (P)</td><td>B</td><td>✔</td></tr>
+<tr><td>CS10003</td><td>PROGRAMMING AND DATA STRUCTURES</td><td>Depth CORE</td><td>3-0-0</td><td>3</td><td>1</td><td>AU-21-22 (P)</td><td>C</td><td>✔</td></tr>
+<tr><td>CS19003</td><td>PROGRAMMING AND DATA STRUCTURES LABORATORY</td><td>Depth CORE</td><td>0-0-3</td><td>2</td><td>1</td><td>AU-21-22 (P)</td><td>B</td><td>✔</td></tr>
+<tr><td>CY11003</td><td>CHEMISTRY</td><td>Depth CORE</td><td>3-1-0</td><td>4</td><td>1</td><td>AU-21-22 (P)</td><td>C</td><td>✔</td></tr>
+<tr><td>EA10007</td><td>EXTRA ACADEMIC ACTIVITY-I</td><td>Depth CORE</td><td>0-0-3</td><td>1</td><td>1</td><td>AU-21-22 (P)</td><td>B</td><td>✔</td></tr>
+<tr><td>HS13003</td><td>ENGLISH FOR COMMUNICATION</td><td>Depth CORE</td><td>2-0-2</td><td>3</td><td>1</td><td>AU-21-22 (P)</td><td>A</td><td>✔</td></tr>
+<tr><td>MA11003</td><td>ADVANCED CALCULUS</td><td>Depth CORE</td><td>3-1-0</td><td>4</td><td>1</td><td>AU-21-22 (P)</td><td>D</td><td>✔</td></tr>
+</tbody>
+</table>
+<div class="performance-summary">
+        Semester 1 Summary: TCT-TCC: 24-24 | SCT-SCC: 24-24 | NCGPA-CGPA-SGPA: 7.42-7.42-7.42 | ATCT-ATCC: 0-0 | ASCT-ASCC: 0-0 | ACGPA-ASGPA: 0.00-0.00
+      </div>
+</div>
+<div class="semester" id="sem2">
+<h2>Semester 2</h2>
+<table>
+<thead>
+<tr>
+<th>Subno</th><th>Subject Name</th><th>Sub. Type</th><th>L-T-P</th><th>Credit</th><th>Reg. Sem.</th><th>Registered Session</th><th>Grade</th><th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>BS10001</td><td>SCIENCE OF LIVING SYSTEMS</td><td>Depth CORE</td><td>2-0-0</td><td>2</td><td>2</td><td>SP-21-22 (P)</td><td>C</td><td>✔</td></tr>
+<tr><td>EA10002</td><td>EXTRA ACADEMIC ACTIVITY II</td><td>Depth CORE</td><td>0-0-3</td><td>1</td><td>2</td><td>SP-21-22 (P)</td><td>A</td><td>✔</td></tr>
+<tr><td>EC10001</td><td>INTRODUCTION TO ELECTRONICS</td><td>Depth CORE</td><td>3-0-0</td><td>3</td><td>2</td><td>SP-21-22 (P)</td><td>D</td><td>✔</td></tr>
+<tr><td>EC19001</td><td>ELECTRONICS LABORATORY</td><td>Depth CORE</td><td>0-0-3</td><td>2</td><td>2</td><td>SP-21-22 (P)</td><td>B</td><td>✔</td></tr>
+<tr><td>MA10002</td><td>LINEAR ALGEBRA</td><td>Depth CORE</td><td>3-1-0</td><td>4</td><td>2</td><td>SP-21-22 (P)</td><td>D</td><td>✔</td></tr>
+<tr><td>PH10001</td><td>PHYSICS</td><td>Depth CORE</td><td>3-1-0</td><td>4</td><td>2</td><td>SP-21-22 (P)</td><td>C</td><td>✔</td></tr>
+<tr><td>PH19001</td><td>PHYSICS LAB</td><td>Depth CORE</td><td>0-0-3</td><td>2</td><td>2</td><td>SP-21-22 (P)</td><td>A</td><td>✔</td></tr>
+</tbody>
+</table>
+<div class="performance-summary">
+    Semester 2 Summary: TCT-TCC: 23-23 | SCT-SCC: 23-23 | NCGPA-CGPA-SGPA: 7.57-7.49-7.57 | ATCT-ATCC: 0-0 | ASCT-ASCC: 0-0 | ACGPA-ASGPA: 0.00-0.00
+  </div>
+</div>
+<div class="semester" id="sem3">
+<h2>Semester 3</h2>
+<table>
+<thead>
+<tr>
+<th>Subno</th><th>Subject Name</th><th>Sub. Type</th><th>L-T-P</th><th>Credit</th><th>Reg. Sem.</th><th>Registered Session</th><th>Grade</th><th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>CS21001</td><td>SWITCHING CIRCUITS AND LOGIC DESIGN</td><td>Depth CORE</td><td>3-0-0</td><td>3</td><td>3</td><td>AU-22-23 (P)</td><td>B</td><td>✔</td></tr>
+<tr><td>CS29001</td><td>SWITCHING CIRCUITS AND LOGIC DESIGN LAB.</td><td>Depth CORE</td><td>0-0-3</td><td>2</td><td>3</td><td>AU-22-23 (P)</td><td>A</td><td>✔</td></tr>
+<tr><td>CS21003</td><td>DATA STRUCTURES AND ALGORITHMS</td><td>Depth CORE</td><td>3-0-0</td><td>3</td><td>3</td><td>AU-22-23 (P)</td><td>C</td><td>✔</td></tr>
+<tr><td>CS29003</td><td>DATA STRUCTURES AND ALGORITHMS LAB.</td><td>Depth CORE</td><td>0-0-3</td><td>2</td><td>3</td><td>AU-22-23 (P)</td><td>B</td><td>✔</td></tr>
+<tr><td>MA21001</td><td>NUMERICAL ANALYSIS</td><td>Depth CORE</td><td>3-0-0</td><td>3</td><td>3</td><td>AU-22-23 (P)</td><td>D</td><td>✔</td></tr>
+<tr><td>MA31007</td><td>PROBABILITY AND STATISTICS</td><td>Depth CORE</td><td>3-1-0</td><td>4</td><td>3</td><td>AU-22-23 (P)</td><td>D</td><td>✔</td></tr>
+<tr><td>EA20001</td><td>EXTRA ACADEMIC ACTIVITY III</td><td>Depth CORE</td><td>0-0-3</td><td>1</td><td>3</td><td>AU-22-23 (P)</td><td>P</td><td>✔</td></tr>
+</tbody>
+</table>
+<div class="performance-summary">
+    Semester 3 Summary: TCT-TCC: 20-20 | SCT-SCC: 20-20 | NCGPA-CGPA-SGPA: 7.75-7.56-7.75 | ATCT-ATCC: 0-0 | ASCT-ASCC: 0-0 | ACGPA-ASGPA: 0.00-0.00
+  </div>
+</div>
+<div class="semester" id="sem4">
+<h2>Semester 4</h2>
+<table>
+<thead>
+<tr>
+<th>Subno</th><th>Subject Name</th><th>Sub. Type</th><th>L-T-P</th><th>Credit</th><th>Reg. Sem.</th><th>Registered Session</th><th>Grade</th><th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>CS20006</td><td>SOFTWARE ENGINEERING</td><td>Depth CORE</td><td>3-0-0</td><td>3</td><td>4</td><td>SP-22-23 (P)</td><td>D</td><td>✔</td></tr>
+<tr><td>CS21004</td><td>DESIGN AND ANALYSIS OF ALGORITHMS</td><td>Depth CORE</td><td>3-0-0</td><td>3</td><td>4</td><td>SP-22-23 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS29004</td><td>DESIGN AND ANALYSIS OF ALGORITHMS LAB.</td><td>Depth CORE</td><td>0-0-3</td><td>2</td><td>4</td><td>SP-22-23 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS29006</td><td>SOFTWARE ENGINEERING LAB.</td><td>Depth CORE</td><td>0-0-3</td><td>2</td><td>4</td><td>SP-22-23 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS31003</td><td>FORMAL LANGUAGES AND AUTOMATA THEORY</td><td>Depth CORE</td><td>3-1-0</td><td>4</td><td>4</td><td>SP-22-23 (P)</td><td>C</td><td>✔</td></tr>
+<tr><td>EE21001</td><td>INTRODUCTION TO ELECTRICAL ENGINEERING</td><td>Depth CORE</td><td>3-0-0</td><td>3</td><td>4</td><td>SP-22-23 (P)</td><td>D</td><td>✔</td></tr>
+<tr><td>EE29001</td><td>INTRODUCTION TO ELECTRICAL ENGINEERING LAB.</td><td>Depth CORE</td><td>0-0-3</td><td>2</td><td>4</td><td>SP-22-23 (P)</td><td>A</td><td>✔</td></tr>
+<tr><td>EA20002</td><td>EXTRA ACADEMIC ACTIVITY IV</td><td>Depth CORE</td><td>0-0-3</td><td>1</td><td>4</td><td>SP-22-23 (P)</td><td>C</td><td>✔</td></tr>
+</tbody>
+</table>
+<div class="performance-summary">
+    Semester 4 Summary: TCT-TCC: 20-20 | SCT-SCC: 20-20 | NCGPA-CGPA-SGPA: 7.62-7.59-7.62 | ATCT-ATCC: 0-0 | ASCT-ASCC: 0-0 | ACGPA-ASGPA: 0.00-0.00
+  </div>
+</div>
+<div class="semester" id="sem5">
+<h2>Semester 5</h2>
+<table>
+<thead>
+<tr>
+<th>Subno</th><th>Subject Name</th><th>Sub. Type</th><th>L-T-P</th><th>Credit</th><th>Reg. Sem.</th><th>Registered Session</th><th>Grade</th><th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>CS31005</td><td>OPERATING SYSTEMS</td><td>Depth CORE</td><td>3-0-0</td><td>3</td><td>5</td><td>AU-23-24 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS39005</td><td>OPERATING SYSTEMS LAB.</td><td>Depth CORE</td><td>0-0-3</td><td>2</td><td>5</td><td>AU-23-24 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS31007</td><td>COMPILERS</td><td>Depth CORE</td><td>3-0-0</td><td>3</td><td>5</td><td>AU-23-24 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS39007</td><td>COMPILERS LAB.</td><td>Depth CORE</td><td>0-0-3</td><td>2</td><td>5</td><td>AU-23-24 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS31001</td><td>COMPUTER ORGANIZATION AND ARCHITECTURE</td><td>Depth CORE</td><td>3-0-0</td><td>3</td><td>5</td><td>AU-23-24 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS39001</td><td>COMPUTER ORGANIZATION AND ARCHITECTURE LAB.</td><td>Depth CORE</td><td>0-0-3</td><td>2</td><td>5</td><td>AU-23-24 (P)</td><td>D</td><td>✔</td></tr>
+<tr><td>CS31011</td><td>DATABASE MANAGEMENT SYSTEMS</td><td>Depth CORE</td><td>3-0-0</td><td>3</td><td>5</td><td>AU-23-24 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS39011</td><td>DATABASE MANAGEMENT SYSTEMS LAB.</td><td>Depth CORE</td><td>0-0-3</td><td>2</td><td>5</td><td>AU-23-24 (P)</td><td>P</td><td>✔</td></tr>
+</tbody>
+</table>
+<div class="performance-summary">
+    Semester 5 Summary: TCT-TCC: 20-20 | SCT-SCC: 20-20 | NCGPA-CGPA-SGPA: 6.9-6.69-6.36 | ATCT-ATCC: 0-0 | ASCT-ASCC: 0-0 | ACGPA-ASGPA: 0.00-0.00
+  </div>
+</div>
+<div class="semester" id="sem6">
+<h2>Semester 6</h2>
+<table>
+<thead>
+<tr>
+<th>Subno</th><th>Subject Name</th><th>Sub. Type</th><th>L-T-P</th><th>Credit</th><th>Reg. Sem.</th><th>Registered Session</th><th>Grade</th><th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>CS31002</td><td>COMPUTER NETWORKS</td><td>Depth CORE</td><td>3-0-0</td><td>3</td><td>6</td><td>SP-23-24 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS39002</td><td>COMPUTER NETWORKS LAB.</td><td>Depth CORE</td><td>0-0-3</td><td>2</td><td>6</td><td>SP-23-24 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS47016</td><td>INTRODUCTION TO MACHINE LEARNING</td><td>Elective</td><td>3-0-0</td><td>3</td><td>6</td><td>SP-23-24 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS47038</td><td>INFORMATION RETRIEVAL</td><td>Elective</td><td>3-0-0</td><td>3</td><td>6</td><td>SP-23-24 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS47044</td><td>SOFT COMPUTING</td><td>Elective</td><td>3-0-0</td><td>3</td><td>6</td><td>SP-23-24 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS48006</td><td>RESEARCH AND INNOVATION</td><td>Project</td><td>0-0-3</td><td>3</td><td>6</td><td>SP-23-24 (P)</td><td>P</td><td>✔</td></tr>
+</tbody>
+</table>
+<div class="performance-summary">
+    Semester 6 Summary: TCT-TCC: 17-17 | SCT-SCC: 17-17 | NCGPA-CGPA-SGPA: 6.54-5.63-6.25 | ATCT-ATCC: 0-0 | ASCT-ASCC: 0-0 | ACGPA-ASGPA: 0.00-0.00
+  </div>
+</div>
+
+<div class="semester" id="sem7">
+<h2>Semester 7</h2>
+<table>
+<thead>
+<tr>
+<th>Subno</th><th>Subject Name</th><th>Sub. Type</th><th>L-T-P</th><th>Credit</th><th>Reg. Sem.</th><th>Registered Session</th><th>Grade</th><th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>CS48003</td><td>SUMMER TRAINING</td><td>Depth CORE</td><td>0-0-0</td><td>2</td><td>7</td><td>SP-24-25 (P)</td><td>D</td><td>✔</td></tr>
+<tr><td>CS47101</td><td>Depth/Breadth Elective I</td><td>Elective</td><td>3-0-0</td><td>3</td><td>7</td><td>SP-24-25 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS47102</td><td>Depth/Breadth Elective II</td><td>Elective</td><td>3-0-0</td><td>3</td><td>7</td><td>SP-24-25 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS47103</td><td>Depth Elective III</td><td>Elective</td><td>3-0-0</td><td>3</td><td>7</td><td>SP-24-25 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS47104</td><td>Depth Elective IV</td><td>Elective</td><td>3-0-0</td><td>3</td><td>7</td><td>SP-24-25 (P)</td><td>P</td><td>✔</td></tr>
+<tr><td>CS47005</td><td>PROJECT - PART 1</td><td>Project I</td><td>0-0-6</td><td>4</td><td>7</td><td>SP-24-25 (P)</td><td>P</td><td>✔</td></tr>
+</tbody>
+</table>
+<div class="performance-summary">
+    Semester 7 Summary: TCT-TCC: 143-143 | SCT-SCC: 2-2 | NCGPA-CGPA-SGPA: 6.34-5.9-5.67 | ATCT-ATCC: 0-0 | ASCT-ASCC: 0-0 | ACGPA-ASGPA: 7.95-8.00
+  </div>
+</div>
+
+<div class="semester" id="sem8">
+<h2>Semester 8</h2>
+<table>
+<thead>
+<tr>
+<th>Subno</th><th>Subject Name</th><th>Sub. Type</th><th>L-T-P</th><th>Credit</th><th>Reg. Sem.</th><th>Registered Session</th><th>Grade</th><th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>CS47105</td><td>Depth/Breadth Elective III</td><td>Elective</td><td>3-0-0</td><td>3</td><td>8</td><td>SU-24</td><td>P</td><td>✔</td></tr>
+<tr><td>CS47106</td><td>Depth/Breadth Elective IV</td><td>Elective</td><td>3-0-0</td><td>3</td><td>8</td><td>SU-24</td><td>P</td><td>✔</td></tr>
+<tr><td>CS47107</td><td>Depth Elective V</td><td>Elective</td><td>3-0-0</td><td>3</td><td>8</td><td>SU-24</td><td>P</td><td>✔</td></tr>
+<tr><td>CS47006</td><td>PROJECT - PART 2</td><td>Project II</td><td>0-0-9</td><td>6</td><td>8</td><td>SU-24</td><td>D</td><td>✔</td></tr>
+</tbody>
+</table>
+<div class="performance-summary">
+    Semester 8 Summary: TCT-TCC: 158-158 | SCT-SCC: 2-2 | NCGPA-CGPA-SGPA: 6.67-6.67-6.46 | ATCT-ATCC: 0-0 | ASCT-ASCC: 0-0 | ACGPA-ASGPA: 8.10-8.25
+  </div>
+</div>
+</div>
+</body>
+</html>
